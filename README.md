@@ -8,7 +8,6 @@ Formulario web desarrollado con PHP, HTML y CSS que permite a los usuarios ingre
 
 ## ⚙️ Características
 
-- Formulario interactivo en HTML.
 - Validación básica de campos en el servidor con PHP.
 - Cálculo automático del IMC al enviar el formulario.
 - Mensaje personalizado de saludo para el usuario.
