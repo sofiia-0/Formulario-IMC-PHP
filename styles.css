@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Petit+Formal+Script&display=swap');
+
+:root {
+    --color-bg: #DBDABE;
+    --color-primary: #536895;
+    --color-white: #fff;
+    --color-shadow: rgba(83, 104, 149, 0.08);
+}
+
+body {
+    background: var(--color-bg);
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+
+.container {
+    background: var(--color-white);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px var(--color-shadow);
+    padding: 2.5rem 2rem;
+    max-width: 400px; /* Opcionalmente puedes ajustar este valor */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-style: bold;
+}
+
+form label {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    display: block;
+    padding-left: 2px;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem 1rem; /* AUMENTADO */
+    margin-bottom: 1.3rem; /* AUMENTADO */
+    border: 1.5px solid var(--color-primary);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f6f6f6;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #2e3c5c;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px var(--color-shadow);
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+    background: #2e3c5c;
+}
+
+.resultado {
+    margin-top: 2rem;
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.resultado h2 {
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.resultado p {
+    color: #333;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+}
